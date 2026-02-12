@@ -23,5 +23,5 @@ jobs:
             - name: Run Maestro Tests (Dry Run / Placeholder)
               run: |
                   echo "To run full E2E tests in CI, use Maestro Cloud or a runner with hardware acceleration."
-                  echo "Example: maestro cloud app_file.apk flows/"
-                  # maestro test explore.yaml --dry-run
+                  echo "Example: maestro cloud app_file.apk tests/e2e/"
+                  # maestro test tests/e2e/ --dry-run
