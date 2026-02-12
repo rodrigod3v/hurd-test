@@ -1,6 +1,6 @@
 # Hurd App - QA Assessment Greenhouse 🌿
 
-Professional QA testing suite for the Hurd Android application.
+Professional QA testing suite for the Hurd Android application. Structured to provide a clear, technical, and high-impact assessment.
 
 ## 🏗️ Project Architecture
 
@@ -8,14 +8,28 @@ Professional QA testing suite for the Hurd Android application.
 .
 ├── .github/workflows/       # CI/CD - GitHub Actions
 ├── docs/                    # Technical & Strategy Documentation
+│   ├── architecture.md      # Robust QA Architecture overview
+│   └── walkthrough.md       # Setup and Execution walkthrough
 ├── evidence/                # Technical Artifacts (Text-only)
-│   └── errors.log           # ADB logcat fatal exceptions
+│   ├── errors.log           # ADB logcat fatal exceptions
 │   └── hierarchy.json       # UI Component tree (Maestro)
 ├── reports/                 # Final QA and Bug reports
+│   └── qa_report.md         # Main QA findings and analysis
 └── tests/                   
     ├── e2e/                 # Maestro E2E Automation (4 flows)
+    │   ├── explore.yaml
+    │   ├── feed_interactions.yaml
+    │   ├── learning_path.yaml
+    │   └── profile_settings.yaml
     └── manual/              # Manual Test Cases & Advanced Scenarios
+        ├── advanced_scenarios.md
+        └── manual_scenarios.md
 ```
+
+## 📂 Navigation Guide
+
+- **[qa_report.md](reports/qa_report.md)**: **The main document**. Contains execution summary, critical findings (crashes), and technical observations.
+- **[walkthrough.md](docs/walkthrough.md)**: Guide on how to reproduce the results and configure the environment.
 
 ## 🛠️ Tech Stack
 - **E2E Framework**: [Maestro](https://maestro.mobile.dev/)
@@ -24,7 +38,7 @@ Professional QA testing suite for the Hurd Android application.
 - **Evidence Format**: Raw technical logs (JSON/Text)
 
 ## 🚀 Execution
-To run the automated suite:
+To run the automated suite locally:
 ```bash
 maestro test tests/e2e/
 ```
