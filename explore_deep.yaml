@@ -1,0 +1,11 @@
+appId: com.kiteinsights.hurd
+---
+- launchApp
+- tapOn: "Contribute"
+- tapOn: "Got it!"
+- takeScreenshot: screen_contribute_main
+- tapOn: "Learn"
+- waitVisible: "Search"
+- takeScreenshot: screen_learn_retry
+- tapOn: "Scores"
+- takeScreenshot: screen_scores_main

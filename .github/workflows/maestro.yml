@@ -1,0 +1,27 @@
+name: Maestro E2E Tests
+
+on:
+    push:
+        branches: [master, main]
+    pull_request:
+        branches: [master, main]
+
+jobs:
+    maestro-tests:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Maestro
+              run: |
+                  curl -Ls "https://get.maestro.mobile.dev" | bash
+                  export PATH="$PATH:$HOME/.maestro/bin"
+                  maestro --version
+
+            - name: Run Maestro Tests (Dry Run / Placeholder)
+              run: |
+                  echo "To run full E2E tests in CI, use Maestro Cloud or a runner with hardware acceleration."
+                  echo "Example: maestro cloud app_file.apk flows/"
+                  # maestro test explore.yaml --dry-run
