@@ -8,8 +8,7 @@ Professional QA testing suite for the Hurd Android application.
 .
 ├── .github/workflows/       # CI/CD - GitHub Actions
 ├── docs/                    # Technical & Strategy Documentation
-├── evidence/                # Test artifacts (logs, hierarchy, screenshots)
-│   ├── home.png, learn.png, contribute.png, scores.png, profile.png
+├── evidence/                # Test artifacts (logs, hierarchy)
 │   └── errors.log, hierarchy.json
 ├── reports/                 # Final QA and Bug reports
 └── tests/                   

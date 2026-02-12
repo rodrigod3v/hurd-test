@@ -49,12 +49,11 @@ The following Maestro flows were created and tested:
 
 ---
 
-## 🖼️ Visual Evidence
-The following screenshots capture the app's current state (documented in the `evidence/` folder):
-- `home.png`: Community Feed landing page.
-- `learn.png`: Learning section (showing loading issues).
-- `contribute.png`: New post prompt and onboarding.
-- `scores.png`: Leaderboard and rankings.
-- `profile.png`: User profile and settings.
+---
 
-Interactive hierarchy is available in `evidence/hierarchy.json` and error logs in `evidence/errors.log`.
+## 📄 Technical Evidence
+Detailed technical evidence is provided in the `evidence/` folder:
+- `hierarchy.json`: Full UI hierarchy data for element verification.
+- `errors.log`: Extracted fatal exceptions and runtime errors from `adb logcat`.
+
+No visual screenshots are included in this report as per requirements.
