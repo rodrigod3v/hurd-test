@@ -1,0 +1,11 @@
+appId: com.kiteinsights.hurd
+---
+- launchApp
+- tapOn: "Profile"
+- assertVisible: "My Post History"
+- assertVisible: "Settings"
+- tapOn: "Settings"
+- tapOn: "Notifications"
+- assertVisible: "Push Notifications"
+- back
+- back

@@ -1,0 +1,8 @@
+appId: com.kiteinsights.hurd
+---
+- launchApp
+- tapOn: "Scores"
+- assertVisible: "Leaderboard"
+- assertVisible: "Top Contributors"
+- scroll
+- assertVisible: "Your Rank"
