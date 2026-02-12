@@ -11,8 +11,8 @@ Professional QA testing suite for the Hurd Android application, featuring manual
 ├── evidence/                # Test artifacts (logs, hierarchy, screenshots)
 ├── reports/                 # Final QA and Bug reports
 └── tests/                   
-    ├── e2e/                 # Maestro E2E Automation Flows
-    └── manual/              # Manual Test Cases & Exploratory Charters
+    ├── e2e/                 # Maestro E2E Automation Flows (Feed, Learning, Profile, Scores)
+    └── manual/              # Manual Test Cases & Advanced Scenarios (Resilience, A11y)
 ```
 
 ## 🛠️ Tech Stack
