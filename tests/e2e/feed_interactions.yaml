@@ -1,0 +1,19 @@
+appId: com.kiteinsights.hurd
+---
+- launchApp
+- tapOn: "Home"
+- assertVisible: "Hurd"
+- scroll
+- tapOn:
+    id: "post_creation_button"
+- inputText: "Maestro Automated Test: Exploring the community feed."
+- tapOn: "Post"
+- scroll
+- tapOn:
+    id: "like_button_id" # Assuming ID from hierarchy
+    index: 0
+- tapOn:
+    id: "comment_button_id"
+    index: 0
+- inputText: "Great initiative!"
+- back

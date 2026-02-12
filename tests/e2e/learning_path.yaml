@@ -1,0 +1,13 @@
+appId: com.kiteinsights.hurd
+---
+- launchApp
+- tapOn: "Learn"
+- waitVisible: "Search"
+- tapOn: "Climate Action 101" # Placeholder for actual lesson title
+- tapOn: "Start Lesson"
+- repeat:
+    times: 10
+    commands:
+      - tapOn: "Next"
+- assertVisible: "Lesson Complete"
+- tapOn: "Finish"
