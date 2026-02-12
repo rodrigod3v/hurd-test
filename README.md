@@ -8,8 +8,9 @@ Professional QA testing suite for the Hurd Android application.
 .
 ├── .github/workflows/       # CI/CD - GitHub Actions
 ├── docs/                    # Technical & Strategy Documentation
-├── evidence/                # Test artifacts (logs, hierarchy)
-│   └── errors.log, hierarchy.json
+├── evidence/                # Technical Artifacts (Text-only)
+│   └── errors.log           # ADB logcat fatal exceptions
+│   └── hierarchy.json       # UI Component tree (Maestro)
 ├── reports/                 # Final QA and Bug reports
 └── tests/                   
     ├── e2e/                 # Maestro E2E Automation (4 flows)
@@ -17,24 +18,19 @@ Professional QA testing suite for the Hurd Android application.
 ```
 
 ## 🛠️ Tech Stack
-- **Framework**: [Maestro](https://maestro.mobile.dev/)
-- **Android Tools**: `adb`, `logcat`, `dumpsys`
+- **E2E Framework**: [Maestro](https://maestro.mobile.dev/)
+- **Diagnostics**: `adb logcat`, `dumpsys window`
 - **CI**: GitHub Actions
-- **Language**: YAML (for tests), Markdown (for docs)
+- **Evidence Format**: Raw technical logs (JSON/Text)
 
-## 🚀 Cómo ejecutar las pruebas
-
-### 1. Requisitos previos
-- Instalar Maestro: `curl -Ls "https://get.maestro.mobile.dev" | bash`
-- Conectar un emulador o dispositivo Android vía ADB.
-
-### 2. Ejecutar Automatización
+## 🚀 Execution
+To run the automated suite:
 ```bash
 maestro test tests/e2e/
 ```
 
-## 🐞 Reporte de Errores
-Todos los hallazgos críticos están en [reports/qa_report.md](reports/qa_report.md) y las evidencias visuales en la carpeta `evidence/`.
+## 🐞 Findings
+Critical bugs, performance regressions, and architectural observations are documented in [reports/qa_report.md](reports/qa_report.md).
 
 ---
 **Maintained by**: Rodrigo & Antigravity AI
