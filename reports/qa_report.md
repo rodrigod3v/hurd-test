@@ -47,4 +47,14 @@ The following Maestro flows were created and tested:
 - `explore.yaml`: Full app navigation.
 - `explore_deep.yaml`: Focused on onboarding dismissal.
 
-*Note: Automation stability was affected by the unresponsive buttons mentioned above.*
+---
+
+## 🖼️ Visual Evidence
+The following screenshots capture the app's current state (documented in the `evidence/` folder):
+- `home.png`: Community Feed landing page.
+- `learn.png`: Learning section (showing loading issues).
+- `contribute.png`: New post prompt and onboarding.
+- `scores.png`: Leaderboard and rankings.
+- `profile.png`: User profile and settings.
+
+Interactive hierarchy is available in `evidence/hierarchy.json` and error logs in `evidence/errors.log`.

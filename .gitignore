@@ -3,8 +3,8 @@
 *.tmp
 *.apk
 
-# Evidence (Allow specific files, ignore images)
-evidence/*.png
+# Evidence (Allow specific files and images)
+# Removed exclusion for png files to allow them in repo
 
 # Maestro
 .maestro/
